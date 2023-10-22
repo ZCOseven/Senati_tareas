@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+#form{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+/* estilos para formulario */
+.contenido-formulario{  /*contenedor padre*/
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contenido-formulario h2{
+    color: #777777;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* estilo para la barra de datos*/
+.barra__datos{
+    margin-bottom: 1.5rem;
+    width: 94%;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    border: #777777 1px solid;
+}
+/* botones */
+.input__ingresar{
+    background-color: #25366e;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border: #25366e 1px solid;
+    border-radius: 5px;
+}
+.input__registrar{
+    background-color: #309635;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border: #309635 1px solid;
+    border-radius: 5px;
+}
+.regresar{
+    background-color: #df1818;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border: #df1818 1px solid;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+/* ESTILOS DE PANEL */
+#cabecera__panel{
+    text-align: center;
+    display: flex;
+    color: #8c553e;
+    justify-content: space-between;
+    background-color: #c6ebf9;
+}
+/*cuerpo del panel*/
+#cuerpo__panel{
+    display: flex;
+}
+.articulo-izquierdo{
+    width: 20%;
+}
+.articulo-izquierdo img{
+    width: 200px;
+    height: 200px;
+}
+/* principal */
+.articulo-principal{
+    width: 70%;
+}
+.editar__perfil{
+    width: 200px;
+    height: 200px;
+}
+.barra__nav{
+    background-color: #b8b8b8;
+    text-align: right;
+    padding: 1rem;
+}
+.barra__nav a{
+    color: #777777;
+    margin: 0rem 1rem;
+}
+.articulo-derecho{
+    width: 10%;
+}

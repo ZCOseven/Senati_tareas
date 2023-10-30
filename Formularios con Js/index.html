@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row my-5">
+            <!-- Columna 1 -->
+            <div class="col-md-4">
+                <img src="img/reloj.jpg" alt="foto-referencial" class="w-100">
+            </div>
+            <!-- Columna 2 -->
+            <div class="col-md-4">
+                <p class="fs-4"><span class="fs-3 fw-bold">Cantidad de años transcurridos desde "----"</span><br>El siguiente formulario es para poder hallar la cantidad de años que transcurrieron desde cierta fecha, hasta la actualidad. En la parte inicial ingresara la fecha a procesar y presionando el boton <span class="text-primary">"Calcular"</span> le mostrara la cantidad de años transcurridos.</p>
+            </div>
+            <!-- Columna 3 -->
+            <div class="col-md-4">
+                <form name="f1" id="f1" action="">
+                    <!--enmarcamos el formulario-->
+                    <fieldset>
+                        <!--le damos un nombre al marco-->
+                        <p class="fs-3 fw-bold">CALCULO DE AÑOS TRANSCURRIDOS</p>
+                        <div class="form-group">
+                            <label class="fs-4">Ingrese una fecha </label><br>
+                            <!--definimos una caja donde introducir el dato de la fecha1-->
+                            <input type="text"
+                            alt=""
+                            style="width: 100px;"
+                            tabindex="2"
+                            maxlength="9"
+                            size="9" value=""
+                            id="fecha1"
+                            name="fecha1"
+                            placeholder="ej. 1989" />
+                        </div>
+                        <div class="form-group">
+                            <label class="fs-4">Ingresa fecha actual</label><br>
+                            <!--definimos una caja donde introducir el dato de la fexha actual-->
+                            <input type="text"
+                                style="width: 100px;"
+                                tabindex="2"
+                                maxlength="9"
+                                size="9"
+                                id="fecha2"
+                                name="fecha2"
+                                placeholder="ej. 2023" /><br>
+                        </div>
+                        <br>
+                        <input type="button"
+                            value="Calcular "
+                            onClick="calculaIMC();"
+                            class="btn btn-primary"
+                            />
+                        <input type="reset" value="Limpiar" class="btn btn-secondary">
+                        <div class="form-group"><br>
+                            <label class="fs-4">Cantidad de años: </label><br>
+                            <!--definimos una caja donde la funcion devolvera el valor de los años transcurridos-->
+                            <input type="text"
+                                name=""
+                                id="años"
+                                size="10"
+                                maxlength="15"><br>
+                        </div>
+                    </fieldset>
+                </form>         
+            </div>
+        </div>
+        <!-- Siguiente fila -->
+        <div class="row my-5">
+            <h3 class="text-center fs-4">¡¿Cuanto sabemos de nuestro país (PERÚ)?!</h3>
+                <p class="text-center lead ">
+                    Con este test intermedio, pondras a prueba tus conocimientos acerca de cuanto sabes de Perú con preguntas sencillas, recurrentes en examenes de historia o en entrevistas personales. Luego podra ver su puntuación que aparece a forma de alerta en la parte superior de su pantalla. Suerte..!
+                </p>
+                <div class="col-md-12">
+                    <div class="mt-4 p-5 bg-secondary text-dark rounded">
+                        <h3>Test Intermedio</h3>
+                        <p>
+                            Responda cada una de las preguntas y le da al boton "resultado" para ver los aciertos.
+                        </p>
+
+                        <ul class="nav nav-tabs justify-content-end">
+                            <li class="nav-item"><a class="nav-link active text-dark" href="#menu1">01</a></li>
+                            <li class="nav-item"><a class="nav-link text-dark" href="#menu2">02</a></li>
+                            <li class="nav-item"><a class="nav-link text-dark" href="#menu3">03</a></li>
+                            <li class="nav-item"><a class="nav-link text-dark" href="#menu4">04</a></li>
+                            <li class="nav-item"><a class="nav-link text-dark" href="#menu5">05</a></li>
+                            <li class="nav-item"><a class="nav-link text-dark text-dark" href="#menu6">06</a></li>
+                            <li class="nav-item"><a class="nav-link text-dark" href="#menu7">07</a></li>
+                            <li class="nav-item"><a class="nav-link text-dark" href="#menu8">08</a></li>
+                            <li class="nav-item"><a class="nav-link text-dark" href="#menu9">09</a></li>
+                            <li class="nav-item"><a class="nav-link text-dark" href="#menu10">10</a></li>
+                            <li class="nav-item"><a class="nav-link text-dark" href="#menu11">11</a></li>                             
+                            <li class="nav-item"><a class="nav-link text-dark"  href="#resultado">Resultado</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="row">
+                                <!-- fila 1 (1-2)-->
+                                <div class="col-lg-6">
+                                    <!-- pregunta 1 -->
+                                    <div class="tab-pane show active fade mt-3" id="menu1" role="tabpanel">
+                                        <div class="container bg-secondary p-3">
+                                            <h4>¿Cuándo se dio la declaración de la independencia del Perú?</h4>
+                                            <p><input type="radio" name="pregunta1" id="p11"> El 28 de julio de 1831.</p>
+                                            <p><input type="radio" name="pregunta1" id="p12"> El 28 de julio de 1821.</p>
+                                            <p><input type="radio" name="pregunta1" id="p13"> El 29 de julio de 1821.</p>
+                                            <p><input type="radio" name="pregunta1" id="p14"> El 28 de julio de 1822.</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- pregunta 2 -->
+                                    <div class="tab-pane fade show active mt-3" id="menu2" role="tabpanel">
+                                        <div class="container bg-secondary p-3">
+                                            <h4>¿Quiénes compusieron el himno nacional del Perú y quién lo cantó por primera vez?</h4>
+                                            <p><input type="radio" name="pregunta2" id="p21">Don José de la Torre Ugarte y la música de don José Bernardo Alcedo. Fue cantado por primera vez por Rosa Merino (1821).</p>
+                                            <p><input type="radio" name="pregunta2" id="p22">Don José de la Torre Lopez y la música de don José de San Martin. Fue cantado por primera vez por Lucia de la cruz (1822).</p>
+                                            <p><input type="radio" name="pregunta2" id="p23">Maria Ugarte y la música de Miguel Grau. Fue cantado por primera vez por El Sambo Cabero (1821).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- fila 2 (3-4) -->
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <!-- pregunta 3-->
+                                    <div class="tab-pane fade show active mt-3" id="menu3" role="tabpanel">
+                                        <div class="container bg-secondary p-3">
+                                            <h4>¿Cuáles son los símbolos patrios?</h4>
+                                            <p><input type="radio" name="pregunta3" id="p31">La vicuña, el árbol de la quina y la cornucopia</p>
+                                            <p><input type="radio" name="pregunta3" id="p32">La bandera, el escudo y el himno nacional.</p>
+                                            <p><input type="radio" name="pregunta3" id="p33">El ceviche, La plaza mayor y El turrón doña Pepa.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- pregunta 4 -->
+                                    <div class="tab-pane fade show active mt-3" id="menu4" role="tabpanel">
+                                        <div class="container bg-secondary p-3">
+                                            <h4>¿Cuáles son los elementos del escudo nacional? (seleccione 3 opciones)</h4>
+                                            <p><input type="checkbox" name="pregunta4" id="p41">La llama</p>
+                                            <p><input type="checkbox" name="pregunta4" id="p42">La cornucopia</p>
+                                            <p><input type="checkbox" name="pregunta4" id="p43">El árbol de la quina</p>
+                                            <p><input type="checkbox" name="pregunta4" id="p44">La vicuña</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- fila 3 (5-6) -->
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <!-- pregunta 5-->
+                                    <div class="tab-pane fade show active mt-3" id="menu5" role="tabpanel">
+                                        <div class="container bg-secondary p-3">
+                                            <h4>"El héroe de la Batalla de Angamos fue: Francisco de Toledo 'El solon del perú' "</h4>
+                                            <p><input type="radio" name="pregunta5" id="p51">Verdadero</p>
+                                            <p><input type="radio" name="pregunta5" id="p52">Falso</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- pregunta 6 -->
+                                    <div class="tab-pane fade show active mt-3" id="menu6" role="tabpanel">
+                                        <div class="container bg-secondary p-3">
+                                            <h4>¿Qué se celebra el 8 de octubre?</h4>
+                                            <p><input type="radio" name="pregunta6" id="p61">Fiestas Patrias</p>
+                                            <p><input type="radio" name="pregunta6" id="p62">Haloween</p>
+                                            <p><input type="radio" name="pregunta6" id="p63">La procesión del Señor de los Milagros</p>
+                                            <p><input type="radio" name="pregunta6" id="p64">La batalla de Angamos</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- fiila 4 (7-8) -->
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <!-- pregunta 7 -->
+                                    <div class="tab-pane fade show active mt-3" id="menu7" role="tabpanel">
+                                        <div class="container bg-secondary p-3">
+                                            <h4>¿Qué día se celebra el día de la bandera?</h4>
+                                            <p><input type="radio" name="pregunta7" id="p71">7 de Junio</p>
+                                            <p><input type="radio" name="pregunta7" id="p72">25 de Julio</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- pregunta 8 -->
+                                    <div class="tab-pane fade show active mt-3" id="menu8" role="tabpanel">
+                                        <div class="container bg-secondary p-3">
+                                            <h4>¿A quién se le conocía como el “Brujo de los andes”?</h4>
+                                            <p><input type="radio" name="pregunta8" id="p81">Andrés Avelino Cáceres.</p>
+                                            <p><input type="radio" name="pregunta8" id="p82">Francisco Bolognesi.</p>
+                                            <p><input type="radio" name="pregunta8" id="p83">Alfonso Ugarte.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- fila 5 (9-10) -->
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <!-- pregunta 11 -->
+                                    <div class="tab-pane fade show active mt-3" id="menu11" role="tabpanel">
+                                        <div class="container bg-secondary p-3">
+                                            <h4>El río más largo del mundo es: El Rio ......</h4>
+                                            <input type="text" name="pregunta11" id="p91">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- pregunta 10 -->
+                                    <div class="tab-pane fade show active mt-3" id="menu10" role="tabpanel">
+                                        <div class="container bg-secondary p-3">
+                                            <h4>¿Quién es el héroe de la aviación civil  peruana?</h4>
+                                            <p><input type="radio" name="pregunta10" id="p101">Jorge Luna.</p>
+                                            <p><input type="radio" name="pregunta10" id="p102">Juan Guillermo More.</p>
+                                            <p><input type="radio" name="pregunta10" id="p103">Jorge Chávez.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- boton Resultados -->
+                                <div class="row">
+                                    <div class="col-md-12 ">
+                                    <!-- parte de resultados-->
+                                        <div class="tab-pane fade show active mt-3 text-center" id="resultado" role="tabpanel">
+                                            <div class="container bg-secondary p-3">
+                                                <h4>Resultados del Test</h4>
+                                                <input type="button" value=" R E S U L T A D O " onClick="resultado()" class="btn btn-warning"/>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </div>
+                                <!--fin de boton enviar-->  
+                            </div>
+                        </div>
+                    </div>                        
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/libreria.js"></script>
+</body>
+</html>
